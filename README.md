@@ -1,28 +1,76 @@
-# Advanced HTML5 Elements and Forms
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia-Rich Webpage</title>
+</head>
+<body>
 
-## Objectives
-Implement HTML5 images, lists, tables, forms and input types.
-Use form validation attributes.
-Apply multimedia elements such as audio and video.
+    <!-- Embedded Image -->
+    <h2>Embedded Image</h2>
+    <img src="image.jpg" alt="Sample Image" width="300">
 
-## Instructions
+    <!-- Audio Element -->
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-- Create an index.html file.
-- Add an ordered list with roman numerals
-- Add an external image from pexels.com
-- Add a table of 5 contacts with; name, address, mobile and emails
-- Add a registration form
+    <!-- Video Element -->
+    <h2>Video Element</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
->[!NOTE]
->  The registration form should have:
->- Name, email, password, and date fields.
->- A dropdown, radio buttons, and checkboxes.
->- Proper labels and placeholders.
->- Required fields and validation attributes.
->- Ensure proper indentation and commenting.
- 
-# Tasks
-- Create a well-structured HTML5 document.
-- Ensure semantic correctness.
+    <!-- Registration Form with Validation -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-Happy Coding! 💻✨
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Embedded Table -->
+    <h2>Sample Table</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>25</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>30</td>
+            <td>UK</td>
+        </tr>
+    </table>
+
+    <!-- List -->
+    <h2>Grocery List</h2>
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+        <li>Butter</li>
+    </ul>
+
+</body>
+</html>
